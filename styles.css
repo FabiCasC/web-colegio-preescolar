@@ -39,6 +39,7 @@
 
 span, a.btn-tour{
     font-size: 20px;
+    font-weight: 400;
 }
 span{
     width: 24%;
@@ -57,8 +58,8 @@ span{
 }
 
 #numero-cab{
-    background-color: #00bfff;
-    color: white;
+    background-color: var(--color-celeste);
+    color: var(--color-fd-blanco);
     clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
     margin-left: 0px;
     width: 35%;
@@ -67,3 +68,108 @@ span{
     padding-right: 100px;
     height: 25px;
 }
+
+/**/
+.sobre-nosotros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+}
+.nosotros-cont{
+    max-width: 900px;
+}
+.tituloCart{
+    font-size: 45px;
+    width: 331px;
+    height: 59px;
+    line-height: 125%;
+    font-weight: 700;
+    
+}
+.subtituloCart{
+    margin-top: 9px;
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 125%;
+    width: 726px;
+    height: 39px;
+}
+
+.parrafoCart{
+    width: 746px;
+    height: 115px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 165%;
+    letter-spacing: 3%;
+}
+img{
+    max-width: 100%;
+}
+
+.estadisticas-nosotros{
+    background-color: var(--color-amarillo);
+    color: var(--color-fd-blanco);
+    border-radius: 32px;
+    width: 724px;
+    height: 166px;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.estats{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+strong{
+    height: 38px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 125%;
+    letter-spacing: 2%;
+}
+.txt-estats{
+    font-size: 20px;
+    line-height: 155%;
+    width: 116px;
+}
+
+#datos-y-btn-info{
+    display: flex;
+    align-items: center;
+}
+
+.datos-nos-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 21px;
+}
+.datos-nos{
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    
+}
+.txt-datos{
+    width: 400px;
+    text-align: left;
+    font-size: 24px;
+}
+#click-nosotros{
+    width: 130px;
+    height: 130px;
+    margin: auto auto;
+    cursor: pointer;
+}
+

@@ -1,0 +1,69 @@
+/*Esta es la fuente del figma y lo saque de google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap'); 
+
+/*colores del figma*/
+:root{
+    --color-celeste: #1BB9FF;
+    --color-amarillo: #FFC107;
+    --color-rojo: #DC3545;
+    --color-fd-blanco: #FFFFFF;
+    --color-azulosc: #3A3D72;
+    --color-negro: #000000;
+    --fuente-fredoka: "Fredoka", sans-serif;
+}
+/*aqui puse la misma fuente para todo*/
+*{
+    margin: 0;
+    padding:0;
+    font-family: var(--fuente-fredoka);
+    text-decoration: none;
+}
+
+.cabecera-pag{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-azulosc);
+    color: var(--color-fd-blanco);
+    height: 76px;
+    box-sizing: border-box;
+}
+.contacto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-right: 8%;
+    height: 100%;
+}
+
+span, a.btn-tour{
+    font-size: 20px;
+}
+span{
+    width: 24%;
+    text-align: center;
+}
+
+.btn-tour{
+    padding: 25.5px 34px;
+    background-color: var(--color-celeste);
+    width: 16em;
+    text-align: center;
+    margin-right: 4em; 
+    margin-left: 4em;
+    cursor: pointer;
+    height: 25px;
+}
+
+#numero-cab{
+    background-color: #00bfff;
+    color: white;
+    clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
+    margin-left: 0px;
+    width: 35%;
+    padding-top: 25.5px;
+    padding-bottom: 25.5px;
+    padding-right: 100px;
+    height: 25px;
+}

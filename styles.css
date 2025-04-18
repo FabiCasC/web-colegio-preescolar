@@ -9,7 +9,10 @@
     --color-fd-blanco: #FFFFFF;
     --color-azulosc: #3A3D72;
     --color-negro: #000000;
+    --color--celesteoscuro:#0072ff;
+    --color-gris:#C7CAE9;
     --fuente-fredoka: "Fredoka", sans-serif;
+    
 }
 /*aqui puse la misma fuente para todo*/
 *{
@@ -178,3 +181,201 @@ strong{
     cursor: pointer;
 }
 
+/* Footer */
+.footer {
+    background-color: var(--color-azulosc);
+    color: var(--color-fd-blanco);
+    padding: 40px 20px;
+    line-height: 150%;
+    
+  }
+  .footer-social {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    background-color: var(--color-azulosc);
+    color: var(--color-fd-blanco);
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .footer-social h3 {
+    margin:0;
+  }
+  .icons-social {
+    display: flex;
+    gap: 10px;
+  }
+  .icons-social a {
+    background-color: var(--color-celeste);
+    color: var(--color-fd-blanco);
+    padding: 14px;
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: var(--color-fd-blanco);
+    transition: all .5s ease;
+
+  }
+  .icons-social a:hover {
+    background-color:var(--color--celesteoscuro) ;
+  }
+  .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    gap: 40px;
+  }
+  
+  .footer-columna {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 220px;
+    min-width: 200px;
+  }
+  
+  .footer-columna h2,h3{
+   
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: var(--color-fd-blanco);
+    border-bottom: 2px solid var(--color-celeste);
+    padding-bottom: 10px;
+    display: inline-block;
+
+  }
+  .footer-social h4{
+   font-size: 150%;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: var(--color-fd-blanco);
+    text-align: center;
+  }
+  .footer-columna li,a
+   {
+    color: var(--color-fd-blanco);
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    display: block;
+    transition: all .3s ease;
+    text-decoration: none;
+  }
+  .footer-columna p {
+    color: #C7CAE9;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    display: block;
+    transition: all .3s ease;
+    text-decoration: none;
+  }
+  .footer-columna li a:hover {
+  color: var(--color-celeste);
+  padding-left: 6px;
+  text-decoration: none;
+  }
+
+  
+  .footer-columna a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-columna ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-columna form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #555;
+    background-color: transparent;
+    color: var(--color-fd-blanco);
+    border-radius: 5px;
+    outline: none;
+    transition: border 0.3s ease;
+    
+  }
+  .footer-columna input:focus {
+    border-color: var(--color-celeste); 
+    outline: none; 
+  }
+  
+  .footer-columna form button {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    color: var(--color-fd-blanco);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .footer-columna form button:hover {
+    background: var(--color--celesteoscuro);
+  }
+  
+  .brand i {
+    color: var(--color-celeste);
+    margin-right: 8px;
+  }
+
+.final {
+    background-color: var(--color-azulosc);
+    color: var(--color-fd-blanco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 13px;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .izquierda-le {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .derecha-ri {
+    gap: 15px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  
+  .derecha-ri a {
+    color: var(--color-fd-blanco);
+    text-decoration: none;
+  }
+  
+  .derecha-ri a:hover {
+    text-decoration: underline,none;
+    color:var(--color-celeste);
+  }
+  .izquierda-le h4:hover {
+    text-decoration: underline;
+  }
+  .izquierda-le {
+    display: flex;
+    align-items: baseline; 
+    white-space: nowrap;
+    flex-grow: 1;
+  }  
+  .izquierda-le h4 {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 4px;
+    color: var(--color-celeste);
+    text-decoration: none;
+  }

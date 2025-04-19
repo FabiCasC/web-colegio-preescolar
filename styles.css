@@ -92,7 +92,193 @@ span {
   height: 25px;
 }
 
-/**/
+/* Barra de navegación principal */
+.main-nav {
+  background-color: white;
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.main-nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 50px;
+  height: 50px;
+}
+
+.logo-text h1 {
+  color: #00a8ff;
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+.logo-text p {
+  color: #666;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.menu ul li a:hover {
+  color: #00a8ff;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: white;
+  transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+  transform: translateY(-3px);
+}
+
+.facebook {
+  background-color: #1877f2;
+}
+
+.twitter {
+  background-color: #ffc107;
+}
+
+.youtube {
+  background-color: #ff3e3e;
+}
+
+/* Estilos para la sección de Nuestras Clases */
+.clases-section {
+  padding: 80px 20px;
+  background-color: #ffffff;
+  font-family: var(--fuente-fredoka);
+}
+
+.clases-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.clases-header {
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.idea-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 120px;
+}
+
+.idea-img {
+  width: 100%;
+  height: auto;
+}
+
+.clases-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.clases-subtitle {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: #555555;
+}
+
+.clases-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.clase-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.clase-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.clase-icon-container {
+  width: 120px;
+  height: 120px;
+  background-color: var(--color-celeste);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 25px;
+}
+
+.clase-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.clase-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #000000;
+}
+
+.clase-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555555;
+}
+
+
+/*Sección sobre nosotros*/
 .sobre-nosotros {
   display: flex;
   align-items: center;
@@ -200,94 +386,6 @@ strong {
   cursor: pointer;
 }
 
-/* Barra de navegación principal */
-.main-nav {
-  background-color: white;
-  padding: 15px 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  margin-bottom: 40px;
-}
-
-.main-nav .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.logo-img {
-  width: 50px;
-  height: 50px;
-}
-
-.logo-text h1 {
-  color: #00a8ff;
-  font-size: 24px;
-  margin-bottom: 0;
-}
-
-.logo-text p {
-  color: #666;
-  font-size: 12px;
-  margin-bottom: 0;
-}
-
-.menu ul {
-  display: flex;
-  list-style: none;
-  gap: 25px;
-}
-
-.menu ul li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  transition: color 0.3s;
-}
-
-.menu ul li a:hover {
-  color: #00a8ff;
-}
-
-.social-icons {
-  display: flex;
-  gap: 15px;
-}
-
-.social-icons a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  color: white;
-  transition: transform 0.3s;
-}
-
-.social-icons a:hover {
-  transform: translateY(-3px);
-}
-
-.facebook {
-  background-color: #1877f2;
-}
-
-.twitter {
-  background-color: #ffc107;
-}
-
-.youtube {
-  background-color: #ff3e3e;
-}
 
 /* Sección Eventos */
 .events {
@@ -366,13 +464,60 @@ strong {
   display: none;
 }
 
+
+/*Call to action*/
+/* Estilos para la sección CTA */
+.cta-section {
+  background-color: var(--color-celeste);
+  padding: 50px 20px;
+  margin-bottom: 0;
+}
+
+.cta-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cta-text {
+  color: white;
+}
+
+.cta-subtitle {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.cta-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.cta-button {
+  background-color: #ff9933;
+  color: white;
+  padding: 18px 35px;
+  font-size: 1.2rem;
+  border-radius: 40px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ff8000;
+}
+
 /* Footer */
 .footer {
   background-color: var(--color-azulosc);
   color: var(--color-fd-blanco);
   padding: 40px 20px;
   line-height: 150%;
-  margin-top: 80px; /* Añadido espacio antes del footer */
+  margin-top: 0 !important
 }
 .footer-social {
   display: flex;

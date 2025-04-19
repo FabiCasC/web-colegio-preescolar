@@ -261,15 +261,6 @@ span {
   height: 500px;
 }
 
-.hero-image {
-  position: relative;
-  width: 90%;
-  height: 90%;
-  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
-  overflow: hidden;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-}
-
 .hero-image img {
   width: 100%;
   height: 100%;

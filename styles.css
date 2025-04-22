@@ -78,6 +78,12 @@ span {
   text-align: center;
 }
 
+.direcciones-cab{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .btn-tour {
   padding: 25.5px 34px;
   background-color: var(--color-celeste);

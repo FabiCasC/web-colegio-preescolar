@@ -699,7 +699,9 @@ TE PUEDE SERVIR PARA EL RESPONSIVE, GIAN
 .galery {
   width: 400px;
   height: 400px;
-  background: var(--i) center/cover no-repeat; //hace llamado a una imagen
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   position: relative;
@@ -716,6 +718,7 @@ TE PUEDE SERVIR PARA EL RESPONSIVE, GIAN
   background: rgba(0, 0, 0, 0.4);
   opacity: 0;
   transition: .5s;
+  border-radius: 12px;
 }
 
 .content h2,a {

@@ -6,15 +6,15 @@
     <title>EduKid</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" sizes="50x50" href="assets/icons/lapizlog.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <div class="cabecera-pag">
         <div class="contacto">
-            <span id="numero-cab" class="direcciones-cab"><img src="assets/icons/telefono-icon.png" alt="telefono-icon"> +51 987 654 321</span>
-            <span class="direcciones-cab"><img src="assets/icons/email-icon.png" alt="email-icon"> contact@gmail.com</span>
-            <span class="direcciones-cab"><img src="assets/icons/local-icon.png" alt="local-icon"> Tupac Amaru 200 - Lima</span>
+            <span id="numero-cab" class="direcciones-cab"><i class="fas fa-phone"></i> +51 987 654 321</span>
+            <span class="direcciones-cab"><i class="fas fa-envelope"></i> contact@gmail.com</span>
+            <span class="direcciones-cab"><i class="fas fa-location-dot"></i> Tupac Amaru 200 - Lima</span>
         </div>
         <a class="btn-tour">Reserva un tour</a>
     </div>
@@ -89,12 +89,12 @@
                 </div>
                 <div id="datos-y-btn-info">
                     <div class="datos-nos-cont">
-                        <div class="datos-nos"><img src="assets/icons/flechamarillap.png" alt="flechamarillap"><span class="txt-datos">Cuidado especial para bebés</span></div>
-                        <div class="datos-nos"><img src="assets/icons/flechamarillap.png" alt="flechamarillap"><span class="txt-datos">Maestros calificados</span></div>
-                        <div class="datos-nos"><img src="assets/icons/flechamarillap.png" alt="flechamarillap"><span class="txt-datos">Revisión diaria de tareas</span></div>
-                        <div class="datos-nos"><img src="assets/icons/flechamarillap.png" alt="flechamarillap"><span class="txt-datos">Lectura y escritura diaria</span></div>
+                        <div class="datos-nos"><i class="fas fa-baby"></i><span class="txt-datos">Cuidado especial para bebés</span></div>
+                        <div class="datos-nos"><i class="fas fa-chalkboard-teacher"></i><span class="txt-datos">Maestros calificados</span></div>
+                        <div class="datos-nos"><i class="fas fa-tasks"></i><span class="txt-datos">Revisión diaria de tareas</span></div>
+                        <div class="datos-nos"><i class="fas fa-book-reader"></i><span class="txt-datos">Lectura y escritura diaria</span></div>
                     </div>
-                    <img id= "click-nosotros"src="assets/imgs/circuloplayazul.png" alt="nosotros btn infoo">
+                    <img id="click-nosotros" src="assets/imgs/circuloplayazul.png" alt="nosotros btn infoo">
                 </div>
             </div>
         </section>
@@ -144,6 +144,41 @@
                         </p>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section class="tabla-cursos">
+            <h2 class="titulo-tabla">Nuestros salones</h2>
+            <div class="tabla-responsiva">
+                <table class="tabla-edukid">
+                <thead>
+                    <tr>
+                        <th>Curso</th>
+                        <th>Duración</th>
+                        <th>Modalidad</th>
+                        <th>Inicio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Inicial Explorador</td>
+                        <td>6 semanas</td>
+                        <td>Presencial</td>
+                        <td>03 Junio</td>
+                    </tr>
+                    <tr>
+                        <td>Lectura Creativa</td>
+                        <td>4 semanas</td>
+                        <td>Virtual</td>
+                        <td>10 Junio</td>
+                    </tr>
+                    <tr>
+                        <td>Mini Científicos</td>
+                        <td>8 semanas</td>
+                        <td>Presencial</td>
+                        <td>17 Junio</td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
 
@@ -229,66 +264,64 @@
 
         <!-- Sección de blog -->
         <section class="blog">
-            <div class="blog-header">
+                <div class="blog-header">
                 <h2>Nuestro Blog</h2>
                 <h3>Últimos Blogs Publicados</h3>
-            </div>
-            <div class="blog-cards">
+                </div>
+            
+                <div class="blog-cards-container">
                 <div class="blog-card">
-                    <img src="assets/imgs/nuestro_blog_img1.png" alt="Fiesta del día del niño">
+                    <img src="assets/imgs/nuestro_blog_img1.png" alt="Fiesta del día del niño" />
                     <div class="blog-content">
-                        <div class="blog-meta">
-                            <span class="no-style">👤 Genio</span>
-                            <span class="no-style">📅 15 de enero del 2023</span>
-                        </div>
-                        <div class="blog-title">Niños jugando aprenden más fácil y mejor</div>
-                        <div class="blog-desc">There are many people variation of passages</div>
-                        <a href="#" class="blog-read">Leer más: Niños...</a>
+                    <div class="blog-meta">
+                        <span class="no-style"><i class="fas fa-user"></i> Genio</span>
+                        <span class="no-style"><i class="fas fa-calendar"></i> 15 de enero del 2023</span>
+                    </div>
+                    <div class="blog-title">Niños jugando aprenden más fácil y mejor</div>
+                    <div class="blog-desc">There are many people variation of passages</div>
+                    <a href="#" class="blog-read">Leer más: Niños...</a>
                     </div>
                 </div>
-            </div>
-            <div class="blog-cards">
+            
                 <div class="blog-card">
-                    <img src="assets/imgs/nuestro_blog_img2.png" alt="Fiesta del día del niño">
+                    <img src="assets/imgs/nuestro_blog_img2.png" alt="Fiesta del día del niño" />
                     <div class="blog-content">
-                        <div class="blog-meta">
-                            <span class="no-style">👤 Genio</span>
-                            <span class="no-style">📅 15 de enero del 2023</span>
-                        </div>
-                        <div class="blog-title">Niños jugando aprenden más fácil y mejor</div>
-                        <div class="blog-desc">There are many people variation of passages</div>
-                        <a href="#" class="blog-read">Leer más: Niños...</a>
+                    <div class="blog-meta">
+                        <span class="no-style"><i class="fas fa-user"></i> Genio</span>
+                        <span class="no-style"><i class="fas fa-calendar"></i> 15 de enero del 2023</span>
+                    </div>
+                    <div class="blog-title">Niños jugando aprenden más fácil y mejor</div>
+                    <div class="blog-desc">There are many people variation of passages</div>
+                    <a href="#" class="blog-read">Leer más: Niños...</a>
                     </div>
                 </div>
-            </div>
-            <div class="blog-cards">
+            
                 <div class="blog-card">
-                    <img src="assets/imgs/nuestro_blog_img3.png" alt="Fiesta del día del niño">
+                    <img src="assets/imgs/nuestro_blog_img3.png" alt="Fiesta del día del niño" />
                     <div class="blog-content">
-                        <div class="blog-meta">
-                            <span class="no-style">👤 Genio</span>
-                            <span class="no-style">📅 15 de enero del 2023</span>
-                        </div>
-                        <div class="blog-title">Niños jugando aprenden más fácil y mejor</div>
-                        <div class="blog-desc">There are many people variation of passages</div>
-                        <a href="#" class="blog-read">Leer más: Niños...</a>
+                    <div class="blog-meta">
+                        <span class="no-style"><i class="fas fa-user"></i> Genio</span>
+                        <span class="no-style"><i class="fas fa-calendar"></i> 15 de enero del 2023</span>
+                    </div>
+                    <div class="blog-title">Niños jugando aprenden más fácil y mejor</div>
+                    <div class="blog-desc">There are many people variation of passages</div>
+                    <a href="#" class="blog-read">Leer más: Niños...</a>
                     </div>
                 </div>
-            </div>
-            <div class="blog-cards">
+            
                 <div class="blog-card">
-                    <img src="assets/imgs/nuestro_blog_img4.png" alt="Fiesta del día del niño">
+                    <img src="assets/imgs/nuestro_blog_img4.png" alt="Fiesta del día del niño" />
                     <div class="blog-content">
-                        <div class="blog-meta">
-                            <span class="no-style">👤 Genio</span>
-                            <span class="no-style">📅 15 de enero del 2023</span>
-                        </div>
-                        <div class="blog-title">Niños jugando aprenden más fácil y mejor</div>
-                        <div class="blog-desc">There are many people variation of passages</div>
-                        <a href="#" class="blog-read">Leer más: Niños...</a>
+                    <div class="blog-meta">
+                        <span class="no-style"><i class="fas fa-user"></i> Genio</span>
+                        <span class="no-style"><i class="fas fa-calendar"></i> 15 de enero del 2023</span>
+                    </div>
+                    <div class="blog-title">Niños jugando aprenden más fácil y mejor</div>
+                    <div class="blog-desc">There are many people variation of passages</div>
+                    <a href="#" class="blog-read">Leer más: Niños...</a>
                     </div>
                 </div>
-            </div>
+                </div>
         </section>
         
         <!-- Sección CTA - Inscribe a tu hijo -->
@@ -306,14 +339,13 @@
 
     <footer class="footer">
         <div class="footer-social">
-            <h4>SIGUENOS</h4>
+            <h4><i class="fas fa-share-nodes"></i> SIGUENOS</h4>
             <div class="icons-social">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-x-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
             </div>
-
         </div>
         <div class="contenedor">
             <div class="footer-columna">
@@ -322,15 +354,15 @@
             </div>
         
             <div class="footer-columna">
-                <h3>Contact</h3>
+                <h3><i class="fas fa-address-card"></i> Contact</h3>
                 <p><i class="fas fa-phone"></i> Office: +51 987 654 321</p>
                 <p><i class="fas fa-envelope"></i> info@email.xyz</p>
-                <p><i class="fas fa-map-marker-alt"></i> Tupac Amaru 200 Comas</p>
+                <p><i class="fas fa-location-dot"></i> Tupac Amaru 200 Comas</p>
                 <p><i class="fab fa-whatsapp"></i> Chat: 51987654321</p>
             </div>
         
             <div class="footer-columna">
-                <h3>Links</h3>
+                <h3><i class="fas fa-link"></i> Links</h3>
                 <ul>
                     <li><a href="#">Sobre Nosotros</a></li>
                     <li><a href="#">Contáctenos</a></li>
@@ -341,23 +373,24 @@
             </div>
         
             <div class="footer-columna">
-                <h3>Newsletter</h3>
+                <h3><i class="fas fa-envelope-open-text"></i> Newsletter</h3>
                 <form>
                     <input type="text" placeholder="Name" required>
                     <input type="email" placeholder="Email" required>
-                    <button type="submit">Subscribete</button>
+                    <button type="submit"><i class="fas fa-paper-plane"></i> Subscribete</button>
                 </form>
-                </div>
-            </div>
-        <div class="final">
-            <div class="izquierda-le">
-                © 2025 Your Company – By <h4> Unitemplates</h4>
-            </div>              
-            <div class="derecha-ri">
-                <a href="#">Terms & Conditions</a> <a href="#">Privacy</a> <a href="#">Support</a>
             </div>
         </div>
-
+        <div class="final">
+            <div class="izquierda-le">
+                <i class="fas fa-copyright"></i> 2025 Your Company – By <h4> Unitemplates</h4>
+            </div>              
+            <div class="derecha-ri">
+                <a href="#"><i class="fas fa-file-contract"></i> Terms & Conditions</a> 
+                <a href="#"><i class="fas fa-shield-halved"></i> Privacy</a> 
+                <a href="#"><i class="fas fa-headset"></i> Support</a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

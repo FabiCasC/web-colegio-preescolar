@@ -5,12 +5,12 @@
 :root {
   --color-celeste: #1bb9ff;
   --color-amarillo: #ffc107;
+  --color-anaranjado: #ffa726;
   --color-rojo: #dc3545;
   --color-fd-blanco: #ffffff;
   --color-azulosc: #3a3d72;
   --color-negro: #000000;
   --color-celesteoscuro: #0072ff;
-  --color-gris: #c7cae9;
   --color-verdeazulado: #1DC1B6;
   --fuente-fredoka: "Fredoka", sans-serif;
 
@@ -22,13 +22,13 @@
   --spacing-xl: 50px;
 
   /* Variables para tamaños de texto */
-  --text-xs: 14px;
-  --text-sm: 16px;
-  --text-md: 18px;
-  --text-lg: 22px;
-  --text-xl: 28px;
-  --text-2xl: 36px;
-  --text-3xl: 48px;
+  --text-xs: 14px;    /* Texto muy pequeño */
+  --text-sm: 16px;    /* Texto pequeño */
+  --text-md: 18px;    /* Texto normal */
+  --text-lg: 22px;    /* Texto destacado */
+  --text-xl: 28px;    /* Subtítulos secundarios (h3) */
+  --text-2xl: 36px;   /* Subtítulos principales (h2) */
+  --text-3xl: 48px;   /* Títulos principales (h1) */
 }
 
 /*aqui puse la misma fuente para todo*/
@@ -61,13 +61,13 @@ main {
 
 .contacto {
   display: flex;
-  justify-content: space-between; /* Pega el primer hijo a la izquierda y el último a la derecha */
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   max-width: 1440px;
   gap: 1em;
-  padding-left: 0;   /* Sin padding izquierdo */
-  margin-left: 0;    /* Sin margen izquierdo */ 
+  padding-left: 0; 
+  margin-left: 0; 
   box-sizing: border-box;
 }
 
@@ -176,13 +176,13 @@ span.direccion {
 }
 
 .logo-text h1 {
-  color: #00a8ff;
-  font-size: var(--text-xl);
+  color: var(--color-celeste);
+  font-size: var(--text-2xl);
   margin-bottom: 0;
 }
 
 .logo-text p {
-  color: #666;
+  color: var(--color-azulosc);
   font-size: var(--text-sm);
   margin-bottom: 0;
 }
@@ -209,7 +209,7 @@ span.direccion {
 
 .menu ul li a {
   text-decoration: none;
-  color: #333;
+  color: var(--color-negro);
   font-weight: 500;
   font-size: var(--text-md);
   transition: color 0.3s;
@@ -217,7 +217,7 @@ span.direccion {
 }
 
 .menu ul li a:hover {
-  color: #00a8ff;
+  color: var(--color-celeste);
 }
 
 .social-icons {
@@ -243,22 +243,22 @@ span.direccion {
 }
 
 .facebook {
-  background-color: #1877f2;
+  background-color: var(--color-azulosc);
 }
 
 .twitter {
-  background-color: #ffc107;
+  background-color: var(--color-amarillo);
 }
 
 .youtube {
-  background-color: #ff3e3e;
+  background-color: var(--color-rojo);
 }
 
 /*Sección de hero*/
 .hero-section {
   position: relative;
   background: linear-gradient(120deg, #fff8e1 0%, #e1f5fe 100%);
-  padding: var(--spacing-xl) var(--spacing-md);
+  padding: var(--spacing-md);
   overflow: hidden;
 }
 
@@ -295,19 +295,19 @@ span.direccion {
   font-weight: 900;
   line-height: 1.2;
   margin-bottom: var(--spacing-md);
-  color: #000;
+  color: var(--color-negro);
 }
 
 .hero-date {
   font-size: var(--text-lg);
   margin-bottom: var(--spacing-md);
   text-decoration: underline;
-  color: #333;
+  color: var(--color-negro);
 }
 
 .hero-button {
   display: inline-block;
-  background-color: #ffa726;
+  background-color: var(--color-anaranjado);
   color: white;
   font-size: var(--text-lg);
   font-weight: 600;
@@ -318,7 +318,7 @@ span.direccion {
 }
 
 .hero-button:hover {
-  background-color: #ff9800;
+  background-color: var(--color-anaranjado);
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
@@ -342,7 +342,7 @@ span.direccion {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: var(--spacing-lg);
+  padding: var(--spacing-md);
   box-sizing: border-box;
   margin-top: 0;
   margin-bottom: var(--spacing-xl);
@@ -389,7 +389,7 @@ span.direccion {
 .parrafoCart {
   max-width: 100%;
   font-weight: 400;
-  font-size: var(--text-lg);
+  font-size: var(--text-md);
   line-height: 165%;
   letter-spacing: 0.03em;
 }
@@ -491,8 +491,8 @@ img {
 
 /* Sección de Nuestras Clases */
 .clases-section {
-  padding: var(--spacing-xl) var(--spacing-md);
-  background-color: #ffffff;
+  padding: var(--spacing-md);
+  background-color: var(--color-fd-blanco);
   font-family: var(--fuente-fredoka);
 }
 
@@ -524,7 +524,7 @@ img {
   font-size: var(--text-2xl);
   font-weight: 700;
   margin-bottom: var(--spacing-sm);
-  color: #000000;
+  color: var(--color-negro);
 }
 
 .clases-subtitle {
@@ -532,7 +532,7 @@ img {
   max-width: 800px;
   margin: 0 auto;
   line-height: 1.6;
-  color: #555555;
+  color: var(--color-azulosc);
 }
 
 .clases-cards {
@@ -543,7 +543,7 @@ img {
 }
 
 .clase-card {
-  background-color: #ffffff;
+  background-color:var(--color-fd-blanco);
   border-radius: 15px;
   padding: var(--spacing-md);
   text-align: center;
@@ -577,13 +577,13 @@ img {
   font-size: var(--text-xl);
   font-weight: 700;
   margin-bottom: 15px;
-  color: #000000;
+  color: var(--color-negro);
 }
 
 .clase-description {
   font-size: var(--text-md);
   line-height: 1.6;
-  color: #555555;
+  color: var(--color-azulosc);
 }
 
 /*
@@ -614,26 +614,75 @@ img {
 TE PUEDE SERVIR PARA EL RESPONSIVE, GIAN
 */
 
+/*Tabla edukid*/
+.tabla-cursos {
+  padding: var(--spacing-md);
+  background-color: var(--color-fd-blanco);
+  text-align: center;
+}
+
+.titulo-tabla {
+  font-size: var(--text-2xl);
+  color: var(--color-negro);
+  font-family: var(--fuente-fredoka);
+  margin-bottom: var(--spacing-sm);
+}
+
+.tabla-responsiva {
+  overflow-x: auto;
+}
+
+.tabla-edukid {
+  width: 100%;
+  max-width: 1000px; /* Ancho */
+  margin: 0 auto;   /* Centrar tabla*/
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  font-family: 'Fredoka', sans-serif;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border: 2px solid var(--color-celesteoscuro);
+}
+
+
+.tabla-edukid thead {
+  background-color: var(--color-celeste);
+  color: var(--color-fd-blanco);
+}
+
+.tabla-edukid th, .tabla-edukid td {
+  padding: var(--spacing-xs);
+  border-bottom: 1px solid var(--color-fd-blanco);
+  text-align: left;
+  font-size: var(--text-sm);
+}
+
+.tabla-edukid tbody tr:hover {
+  background-color: var(--color-fd-blanco);
+  transition: background-color 0.3s ease;
+}
+
 /* Galería */
 .galeria-titulo {
   text-align: center;
   margin-top: 40px;
   margin-bottom: 20px;
+  padding: var(--spacing-md);
 }
 
 .subtitulo {
-  color: #00aaff;
-  font-family: 'Comic Sans MS', cursive, sans-serif;
-  font-size: 18px;
+  color: var(--color-celeste);
+  font-family: var(--fuente-fredoka);
+  font-size: var(--text-lg);
   margin: 0;
   margin-top: 40px;
 }
 
 .titulo-principal {
-  color: #2c2c5a;
-  font-size: 32px;
+  color: var(--color-azulosc);
+  font-size: var(--text-2xl);
   font-weight: bold;
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--fuente-fredoka);
   margin: 5px 0 0;
 }
 
@@ -683,7 +732,7 @@ TE PUEDE SERVIR PARA EL RESPONSIVE, GIAN
   text-align: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 var(--spacing-md);
+  padding: var(--spacing-md);
   margin-top: var(--spacing-xl);
   margin-bottom: var(--spacing-xl);
 }
@@ -696,7 +745,7 @@ TE PUEDE SERVIR PARA EL RESPONSIVE, GIAN
 .events h3 {
   font-size: var(--text-xl);
   margin-bottom: var(--spacing-lg);
-  color: #666;
+  color: var(--color-celeste);
 }
 
 .event-cards {
@@ -746,8 +795,95 @@ TE PUEDE SERVIR PARA EL RESPONSIVE, GIAN
 
 .event-content p {
   font-size: var(--text-md);
-  color: #555;
+  color: var(--color-azulc);
   line-height: 1.5;
+}
+
+/* Sección Blog */
+.blog {
+  padding: var(--spacing-md);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.blog-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.blog-header h2 {
+  font-size: var(--text-2xl);
+}
+
+.blog-header h3 {
+  color: var(--color-azulc);
+  font-size: var(--text-lg);
+}
+
+/* Cards container */
+.blog-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+/* Blog card horizontal */
+.blog-card {
+  display: flex;
+  align-items: center;
+  border: 2px dotted var(--color-anaranjado);
+  border-radius: 12px;
+  width: calc(40% - 12px);
+  background: var(--color-fd-blanco);
+  overflow: hidden;
+  padding: 16px;
+  gap: 16px;
+}
+
+/* Blog image */
+.blog-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Content side */
+.blog-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.blog-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+  color: var(--color-azulosc);
+}
+
+/* Title */
+.blog-title {
+  font-size: var(--text-lg);
+  font-weight: bold;
+  color: var(--color-negro);
+}
+
+/* Description */
+.blog-desc {
+  font-size: var(--text-md);
+  color: var(--color-azulc);
+}
+
+/* Read more */
+.blog-read {
+  font-weight: 600;
+  color: var(--color-azulosc);
+  text-decoration: none;
+  margin-top: 4px;
+  font-size: var(--text-sm);
 }
 
 /*Call to action*/
@@ -761,13 +897,17 @@ TE PUEDE SERVIR PARA EL RESPONSIVE, GIAN
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: var(--spacing-lg);
+  flex-wrap: wrap;
 }
 
 .cta-text {
   color: white;
+  flex: 1;
+  min-width: 300px;
 }
 
 .cta-subtitle {
@@ -782,7 +922,7 @@ TE PUEDE SERVIR PARA EL RESPONSIVE, GIAN
 }
 
 .cta-button {
-  background-color: #ff9933;
+  background-color: var(--color-anaranjado);
   color: white;
   padding: 18px 35px;
   font-size: var(--text-lg);
@@ -790,127 +930,13 @@ TE PUEDE SERVIR PARA EL RESPONSIVE, GIAN
   font-weight: 600;
   text-decoration: none;
   transition: background-color 0.3s ease;
+  flex-shrink: 0;
 }
 
 .cta-button:hover {
-  background-color: #ff8000;
+  background-color: var(--color-anaranjado);
 }
 
-/* Sección Blog */
-.blog {
-  padding: 60px 20px;
-  text-align: center;
-  background-color: #ffffff;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.blog-header {
-  margin-bottom: 40px;
-}
-
-.blog-header h2 {
-  font-size: var(--text-2xl);
-  margin-bottom: 10px;
-  color: var(--color-celeste);
-}
-
-.blog-header h3 {
-  font-size: var(--text-xl);
-  margin-bottom: var(--spacing-lg);
-  width: 542;
-  height: 40;
-  font: var(--fuente-fredoka);
-  font-weight: 700;
-  font-size: 45px;
-  line-height: 125%;
-  letter-spacing: 3%;
-  text-align: center;
-  color: var(--color-azulosc);
-}
-
-.blog-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 24px;
-  margin: 10px auto;
-  max-width: calc(2 * 350px + 24px); /* 2 columnas de 350px + 1 gap */
-}
-
-.blog-card {
-  width: 350px;
-  padding: 20px;
-  border: 2px dashed var(--color-amarillo);
-  min-width: 280px;
-  max-width: 100%;
-  display: flex;
-  justify-content: center;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  overflow: hidden;
-  text-align: left;
-  background-color: #ffffff;
-  transition: transform 0.3s ease;
-}
-
-.blog-card:hover {
-  transform: scale(1.03);
-}
-
-.blog-card img {
-  width: 170px;
-  height: 170px;
-  object-fit: cover;
-  border-radius: 16px;
-  margin-bottom: 20px;
-}
-
-.blog-content {
-  padding: 20px;
-}
-
-.blog-meta {
-  font-size: 14px;
-  color: #888888;
-  margin-bottom: 10px;
-}
-
-.blog-title {
-  font-size: 18px;
-  font-weight: 600;
-  color: #003865;
-  margin-bottom: 10px;
-}
-
-.blog-desc {
-  font-size: 14px;
-  color: #555555;
-  margin-bottom: 15px;
-}
-
-.blog-read {
-  color: #007bff;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 14px;
-}
-
-.blog-read:hover {
-  text-decoration: underline;
-}
-
-/* Responsive por si lo ves en móvil */
-@media (max-width: 768px) {
-  .blog-cards {
-    display: block;
-    margin: 20px auto;
-  }
-
-  .blog-card {
-    margin: 0 auto 20px auto;
-  }
-}
 
 /* Footer - espaciado ajustado */
 .footer {
@@ -930,29 +956,35 @@ TE PUEDE SERVIR PARA EL RESPONSIVE, GIAN
   color: var(--color-fd-blanco);
   font-weight: bold;
   font-size: var(--text-lg);
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
 }
 
 .footer-social h3 {
   margin: 0;
+  flex: 1;
+  min-width: 200px;
 }
 
 .icons-social {
   display: flex;
   gap: 15px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .icons-social a {
   background-color: var(--color-celeste);
   color: var(--color-fd-blanco);
   padding: 14px;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-height: 40px;
   width: 40px;
-  margin: 0 10px 10px 0;
-  text-align: center;
-  line-height: 40px;
   border-radius: 50%;
   transition: all .5s ease;
+  flex-shrink: 0;
 }
 
 .icons-social a:hover {
@@ -969,10 +1001,9 @@ TE PUEDE SERVIR PARA EL RESPONSIVE, GIAN
 }
 
 .footer-columna {
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 220px;
+  flex: 1 1 220px;
   min-width: 200px;
+  max-width: 300px;
 }
 
 .footer-columna h2,
@@ -986,7 +1017,7 @@ h3 {
 }
 
 .footer-social h4 {
-  font-size: 150%;
+  font-size: var(--text-xl);
   font-weight: 600;
   margin-bottom: var(--spacing-md);
   color: var(--color-fd-blanco);
@@ -1004,7 +1035,7 @@ a {
 }
 
 .footer-columna p {
-  color: #c7cae9;
+  color: var(--color-azulc);
   font-size: var(--text-sm);
   margin-bottom: 12px;
   display: block;
@@ -1031,7 +1062,7 @@ a {
   width: 100%;
   padding: 12px;
   margin-bottom: 15px;
-  border: 1px solid #555;
+  border: 1px solid var(--color-celeste);
   background-color: transparent;
   color: var(--color-fd-blanco);
   border-radius: 5px;
@@ -1047,7 +1078,7 @@ a {
 .footer-columna form button {
   width: 100%;
   padding: 12px;
-  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  background: var(--color-celeste);
   color: var(--color-fd-blanco);
   border: none;
   border-radius: 5px;
@@ -1078,37 +1109,29 @@ a {
 
 .izquierda-le {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   flex-wrap: nowrap;
+  flex: 1;
+  min-width: 200px;
 }
 
 .derecha-ri {
-  gap: 20px;
-  flex-shrink: 0;
   display: flex;
   align-items: center;
-  flex-wrap: nowrap;
+  gap: 20px;
+  flex-wrap: wrap;
+  flex-shrink: 0;
 }
 
 .derecha-ri a {
   color: var(--color-fd-blanco);
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .derecha-ri a:hover {
-  text-decoration: underline, none;
-  color: var(--color-celeste);
-}
-
-.izquierda-le h4:hover {
   text-decoration: underline;
-}
-
-.izquierda-le {
-  display: flex;
-  align-items: baseline;
-  white-space: nowrap;
-  flex-grow: 1;
+  color: var(--color-celeste);
 }
 
 .izquierda-le h4 {
@@ -1117,4 +1140,68 @@ a {
   margin-left: 4px;
   color: var(--color-celeste);
   text-decoration: none;
+}
+
+.izquierda-le h4:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para iconos de Font Awesome */
+.direcciones-cab i {
+  font-size: 18px;
+  margin-right: 8px;
+  color: var(--color-fd-blanco);
+}
+
+.menu ul li a i {
+  margin-right: 5px;
+  color: var(--color-azulosc);
+}
+
+.datos-nos i {
+  font-size: 24px;
+  color: var(--color-amarillo);
+  margin-right: 10px;
+}
+
+.blog-meta i {
+  margin-right: 5px;
+  color: var(--color-azulosc);
+}
+
+.footer-columna h3 i {
+  margin-right: 8px;
+  color: var(--color-celeste);
+}
+
+.footer-columna ul li a i {
+  margin-right: 5px;
+  color: var(--color-celeste);
+}
+
+.footer-columna button i {
+  margin-right: 5px;
+}
+
+.final i {
+  margin-right: 5px;
+}
+
+.derecha-ri a i {
+  margin-right: 5px;
+}
+
+/* Ajustes específicos para iconos sociales */
+.social-icons a i {
+  font-size: 18px;
+}
+
+.icons-social a i {
+  font-size: 18px;
+}
+
+/* Ajuste para el icono de copyright */
+.izquierda-le i {
+  font-size: 14px;
+  color: var(--color-fd-blanco);
 }

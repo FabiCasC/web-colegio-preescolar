@@ -76,9 +76,16 @@ main {
   flex: 0 1 auto;
 }
 
-span,
+
+
+
 a.btn-tour {
   font-size: var(--text-md);
+  font-weight: 400;
+}
+
+span {
+  font-size: var(--text-sm);
   font-weight: 400;
 }
 
@@ -370,7 +377,7 @@ span.direccion {
 }
 
 .tituloCart {
-  font-size: var(--text-3xl);
+  font-size: var(--text-2xl);
   max-width: 100%;
   line-height: 125%;
   font-weight: 700;
@@ -380,7 +387,7 @@ span.direccion {
   margin-top: 15px;
   margin-bottom: 20px;
   font-weight: 400;
-  font-size: var(--text-2xl);
+  font-size: var(--text-xl);
   color: var(--color-negro);
   line-height: 125%;
   max-width: 100%;
@@ -430,7 +437,7 @@ img {
 }
 
 .txt-estats {
-  font-size: 0.95rem;
+  font-size: var(--text-sm);
   line-height: 140%;
   max-width: 116px;
   text-align: center;
@@ -650,7 +657,14 @@ TE PUEDE SERVIR PARA EL RESPONSIVE, GIAN
   color: var(--color-fd-blanco);
 }
 
-.tabla-edukid th, .tabla-edukid td {
+.tabla-edukid th {
+  padding: var(--spacing-xs);
+  border-bottom: 1px solid var(--color-fd-blanco);
+  text-align: left;
+  font-size: var(--text-lg);
+}
+
+.tabla-edukid td {
   padding: var(--spacing-xs);
   border-bottom: 1px solid var(--color-fd-blanco);
   text-align: left;
@@ -673,7 +687,7 @@ TE PUEDE SERVIR PARA EL RESPONSIVE, GIAN
 .subtitulo {
   color: var(--color-celeste);
   font-family: var(--fuente-fredoka);
-  font-size: var(--text-lg);
+  font-size: var(--text-xl);
   margin: 0;
   margin-top: 40px;
 }
@@ -791,7 +805,7 @@ TE PUEDE SERVIR PARA EL RESPONSIVE, GIAN
 }
 
 .event-content h4 {
-  font-size: var(--text-xl);
+  font-size: var(--text-lg);
   margin-bottom: 20px;
   color: var(--color-azulosc);
 }
@@ -819,7 +833,7 @@ TE PUEDE SERVIR PARA EL RESPONSIVE, GIAN
 
 .blog-header h3 {
   color: var(--color-azulc);
-  font-size: var(--text-lg);
+  font-size: var(--text-xl);
 }
 
 /* Cards container */

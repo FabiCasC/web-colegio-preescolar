@@ -1,37 +1,37 @@
 /*Esta es la fuente del figma y lo saque de google fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
 
-/*colores del figma - los saque de la paleta que me dio el profe*/
+/*colores del figma*/
 :root {
-  --color-celeste: #1bb9ff;    /* este azul me recuerda al cielo de verano */
-  --color-amarillo: #ffc107;   /* como el sol! ☀️ */
-  --color-anaranjado: #ffa726; /* naranja tipo halloween 🎃 */
-  --color-rojo: #dc3545;       /* rojo como una manzana 🍎 */
-  --color-fd-blanco: #ffffff;  /* blanco puro como la nieve ❄️ */
-  --color-azulosc: #3a3d72;    /* azul oscuro tipo noche 🌙 */
-  --color-negro: #000000;      /* negro como el carbón */
-  --color-celesteoscuro: #0072ff; /* otro azul pero más oscuro */
-  --color-verdeazulado: #1DC1B6;  /* verde agua tipo mar Caribe 🌊 */
-  --fuente-fredoka: "Fredoka", sans-serif; /* esta fuente es re linda! */
+  --color-celeste: #1bb9ff;
+  --color-amarillo: #ffc107;
+  --color-anaranjado: #ffa726;
+  --color-rojo: #dc3545;
+  --color-fd-blanco: #ffffff;
+  --color-azulosc: #3a3d72;
+  --color-negro: #000000;
+  --color-celesteoscuro: #0072ff;
+  --color-verdeazulado: #1DC1B6;
+  --fuente-fredoka: "Fredoka", sans-serif;
 
-  /* Variables para espaciado consistente - el profe dijo que esto es buena práctica */
-  --spacing-xs: 10px;    /* super chiquito */
-  --spacing-sm: 20px;    /* chiquito */
-  --spacing-md: 40px;    /* mediano */
-  --spacing-lg: 70px;    /* grande */
-  --spacing-xl: 50px;    /* extra grande */
+  /* Variables para espaciado consistente */
+  --spacing-xs: 10px;
+  --spacing-sm: 20px;
+  --spacing-md: 40px;
+  --spacing-lg: 70px;
+  --spacing-xl: 50px;
 
-  /* Variables para tamaños de texto - así no me confundo con los números */
-  --text-xs: 14px;    /* Texto muy pequeño - para notas al pie */
-  --text-sm: 16px;    /* Texto pequeño - para párrafos normales */
-  --text-md: 18px;    /* Texto normal - el que más uso */
-  --text-lg: 22px;    /* Texto destacado - para títulos chicos */
-  --text-xl: 28px;    /* Subtítulos secundarios (h3) - para secciones */
-  --text-2xl: 36px;   /* Subtítulos principales (h2) - para páginas */
-  --text-3xl: 48px;   /* Títulos principales (h1) - para la página principal */
+  /* Variables para tamaños de texto */
+  --text-xs: 14px;    /* Texto muy pequeño */
+  --text-sm: 16px;    /* Texto pequeño */
+  --text-md: 18px;    /* Texto normal */
+  --text-lg: 22px;    /* Texto destacado */
+  --text-xl: 28px;    /* Subtítulos secundarios (h3) */
+  --text-2xl: 36px;   /* Subtítulos principales (h2) */
+  --text-3xl: 48px;   /* Títulos principales (h1) */
 }
 
-/*aqui puse la misma fuente para todo - así se ve más profesional*/
+/*aqui puse la misma fuente para todo*/
 * {
   margin: 0;
   padding: 0;
@@ -39,23 +39,20 @@
   text-decoration: none;
 }
 
-/*esto hace que el scroll sea suave - lo vi en un tutorial de YouTube*/
 html {
   scroll-behavior: smooth;
 }
 
-/* Espaciado general entre secciones - para que no se vea todo junto*/
+/* Espaciado general entre secciones*/
 section {
   margin-bottom: var(--spacing-xl);
   margin-top: 0;
 }
 
-/*un poquito de espacio arriba del contenido principal*/
 main {
   padding-top: 1rem; 
 }
 
-/*la cabecera de la página - la hice con flexbox que es más fácil que float*/
 .cabecera-pag {
   display: flex;
   justify-content: center;
@@ -155,7 +152,7 @@ span.direccion {
   }
 
 
-/*la barra de navegación - le puse sombra para que se vea que flota*/
+/* Barra de navegación principal */
 .main-nav {
   background-color: white;
   padding: var(--spacing-sm) 0;
@@ -266,7 +263,7 @@ span.direccion {
   background-color: var(--color-rojo);
 }
 
-/*sección hero */
+/*Sección de hero*/
 .hero-section {
   position: relative;
   background: linear-gradient(120deg, #fff8e1 0%, #e1f5fe 100%);
@@ -353,7 +350,76 @@ span.direccion {
   transform: translateX(-10px) rotate(-2deg);
 }
 
-/*estadísticas - le puse animación de rebote*/
+/*Sección sobre nosotros*/
+.sobre-nosotros {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-md);
+  box-sizing: border-box;
+  margin-top: 0;
+  margin-bottom: var(--spacing-xl);
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+#img-niños {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  flex: 1 1 350px;
+  min-width: 300px;
+  align-self: center;
+  animation: bounce 1.8s infinite ease-in-out;
+}
+@keyframes bounce-img {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.nosotros-cont {
+  max-width: 600px;
+  flex: 1 1 350px;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.tituloCart {
+  font-size: var(--text-2xl);
+  max-width: 100%;
+  line-height: 125%;
+  font-weight: 700;
+}
+
+.subtituloCart {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: var(--text-xl);
+  color: var(--color-negro);
+  line-height: 125%;
+  max-width: 100%;
+}
+
+.parrafoCart {
+  max-width: 100%;
+  font-weight: 400;
+  font-size: var(--text-md);
+  line-height: 165%;
+  letter-spacing: 0.03em;
+}
+
+img {
+  max-width: 100%;
+}
+
 .estadisticas-nosotros {
   background-color: var(--color-amarillo);
   color: var(--color-fd-blanco);
@@ -605,8 +671,8 @@ TE PUEDE SERVIR PARA EL RESPONSIVE, GIAN
 
 .tabla-edukid {
   width: 100%;
-  max-width: 1000px;
-  margin: 0 auto; 
+  max-width: 1000px; /* Ancho */
+  margin: 0 auto;   /* Centrar tabla*/
   border-collapse: collapse;
   border-radius: 12px;
   overflow: hidden;
@@ -704,7 +770,6 @@ TE PUEDE SERVIR PARA EL RESPONSIVE, GIAN
   margin: 10px 0;
 }
 
-/*galería - le puse efecto hover */
 .galery:hover .content {
   opacity: 1;
 }
@@ -1318,7 +1383,6 @@ a {
   font-size: 20px;
 }
 
-/*cuando pasas el mouse por encima el botón se hace más grande */
 .scroll-up:hover {
   background-color: var(--color-celesteoscuro);
   border: var(--color-fd-blanco);

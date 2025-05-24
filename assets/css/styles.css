@@ -39,6 +39,10 @@
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Espaciado general entre secciones - ajustado para ser más consistente */
 section {
   margin-bottom: var(--spacing-xl);
@@ -874,6 +878,7 @@ TE PUEDE SERVIR PARA EL RESPONSIVE, GIAN
 /* Blog card horizontal */
 .blog-card {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   border: 2px dotted var(--color-anaranjado);
   border-radius: 12px;
@@ -1269,4 +1274,120 @@ a {
 .izquierda-le i {
   font-size: 14px;
   color: var(--color-fd-blanco);
+}
+
+/* Formulario - Section */
+.formulario-section {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-xl) 0;
+  align-items: center;
+}
+
+.formulario {
+  flex: 1 1 320px;
+  min-width: 280px;
+  max-width: 700px;
+}
+
+.formulario-img {
+  flex: 1 1 220px;
+  min-width: 180px;
+  max-width: 400px;
+}
+
+.formulario-img img {
+  display: block;
+  border: dotted 3px var(--color-amarillo);
+  border-radius: 20%;
+}
+
+.formulario form input,
+.formulario form button {
+  box-sizing: border-box;
+}
+
+.formulario h3 {
+  color: var(--color-celeste);
+}
+
+.formulario form button {
+  width: 100%;
+  padding: 12px;
+  background: var(--color-celeste);
+  color: var(--color-fd-blanco);
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.formulario form button:hover {
+  background: var(--color-celesteoscuro);
+}
+
+.formulario form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid var(--color-anaranjado);
+  background-color: transparent;
+  color: var(--color-negro);
+  border-radius: 5px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+@media (max-width: 900px) {
+  .formulario-section {
+    flex-direction: column;
+    gap: var(--spacing-md);
+    padding: var(--spacing-lg) 0;
+  }
+  .formulario, .formulario-img {
+    max-width: 100%;
+    min-width: 0;
+    width: 100%;
+  }
+  .formulario-img {
+    margin-bottom: var(--spacing-md);
+  }
+}
+
+@media (max-width: 600px) {
+  .formulario-section {
+    padding: var(--spacing-md) 0;
+    gap: var(--spacing-sm);
+  }
+  .formulario-img img {
+    border-radius: 10%;
+  }
+}
+/* Scroll-buttom */
+.scroll-up {
+  position: fixed;
+  bottom: 10px;
+  right: 25px;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  background-color: var(--color-celeste);
+  color: var(--color-fd-blanco);
+  border: 1px solid var(--color-celeste);
+  font-size: 20px;
+}
+
+.scroll-up:hover {
+  background-color: var(--color-celesteoscuro);
+  border: var(--color-fd-blanco);
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  transition: 0.1s;
+  font-size: 22.5px;
 }

@@ -1392,3 +1392,253 @@ a {
   transition: 0.1s;
   font-size: 22.5px;
 }
+
+
+@media (max-width: 1024px){
+  .container{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  ul{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+  }
+}
+@media (max-width: 768px){
+  .btn-tour{
+    display: none;
+  }
+  .contacto{
+    padding-right: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: auto;
+    gap: 2rem;
+  }
+  #numero-cab{
+    clip-path: none;
+    background-color: var(--color-azulosc);
+    padding: 0rem;
+  }
+  .cabecera-pag{
+    height: auto;
+    width: auto;
+
+  }
+  .direcciones-cab{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+
+  }
+
+  .main-nav.container{
+    flex-wrap: wrap;
+
+  }
+  .menu{
+    order: 2;
+    flex-basis: 100%;
+  }
+  .menu > ul{
+    padding-top: 3%;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .logo{
+    padding-left: 3%;
+  }
+  .social-icons{
+    padding-right: 3%;
+  }
+
+  .hero-container{
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+  .hero-content{
+    flex: 1 1 50%;
+    z-index: 2;
+    position: relative;
+  }
+  
+  
+  .hero-image-container{
+    position: absolute;
+    right: 0;
+    top: 15%;
+    width: 10%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+  }
+  .hero-image{
+    width: 100%;
+    justify-content: center;
+
+  }
+  .hero-image img{
+    width: 100%;
+    height: auto;
+  
+  }
+  .shape-shape-1, .shape-shape-2, .shape-shape-3, .shape-shape-4{
+    display: none;
+  }
+  .hero-title{
+    width: 50%;
+  }
+  .div-img-niños{
+    position: absolute;
+  }
+  #img-niños{
+    opacity: 0.1;
+    z-index: 1;
+  }
+  .nosotros-cont{
+    z-index: 2;
+  }
+  .blog-cards-container{
+    flex-direction: column;
+  }
+  .blog-card{
+    width: 95%;
+  }
+  
+}
+@media (max-width: 480px) {
+  .footer{
+    justify-content: center;
+  }
+  .footer-social{
+    justify-content: center;
+    padding: 7%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .footer-social h4{
+    margin: 0;
+  }
+  .icons-social{
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .final{
+    padding: 10%;
+    justify-content: center;
+  }
+  .derecha-ri{
+    flex-direction: column;
+  }
+  .izquierda-le{
+    width: 100%;
+  }
+  .contenedor{
+    justify-content: center;
+  }
+  .footer-columna{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #links{
+    display: flex;
+    flex-direction: column;
+  }
+  .blog-card{
+    flex-direction: column;
+  }
+  .blog-card img{
+    width: 80%;
+    height: auto;
+  }
+  .galery{
+    width: 80%;
+    height: 300px;
+  }
+  .content {
+    width: 100%;
+  }
+  .estadisticas-nosotros{
+    flex-direction: column;
+    width: 20%;
+    gap: 10px;
+  }
+  #img-niños{
+    display: none ;
+  }
+  .contacto{
+    flex-direction: column;
+    gap: 4px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    width: 80%;
+  }
+  .direcciones-cab{
+    font-size: 20px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+  .main-nav > .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+  }
+  .logo{
+    width: 80%;
+    height: auto  ;
+    padding-left: 10%;
+  }
+  .logo-img{
+    width: 25%;
+    height: auto;
+  }
+  .logo-text h1{
+    font-size: 50px;
+  }
+  .hero-title{
+    font-size: 30px;
+  }
+  .social-icons{
+    padding-right: 0px;
+  }
+  .menu{
+    display: none;
+  }
+  #img-nino{
+    display: none;
+  }
+  .hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 0px;
+  }
+  .hero-button{
+    width: 40%;
+    text-align: center;
+  }
+  .hero-title{
+    text-align: center;
+    width: 60%;
+    font-size: 38px;
+  }
+  .cta-container{
+    justify-content: center;
+  }
+  .cta-subtitle, .cta-title{
+    text-align: center;
+  }
+  .hero-image img{
+    display: none;
+  }
+}
+
+

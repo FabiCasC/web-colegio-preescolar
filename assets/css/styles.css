@@ -37,7 +37,7 @@
   padding: 0;
   font-family: var(--fuente-fredoka);
   text-decoration: none;
-  /*outline: #dc3545 solid;  para  ver errores */
+  /*outline: #dc3545 solid;  */ /*ver errores*/
 }
 
 html {
@@ -385,7 +385,7 @@ span.direccion {
 .nosotros-cont {
   max-width: 600px;
   flex: 1 1 350px;
-  min-width: 320px;
+  min-width: 200px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -474,7 +474,7 @@ img {
   justify-content: flex-start;
   gap: 20px;
   flex: 1;
-  min-width: 300px;
+  
   width: 100%;
 }
 
@@ -500,7 +500,6 @@ img {
   text-align: left;
   font-size: var(--text-lg);
   flex: 1;
-  min-width: 250px;
 }
 
 #click-nosotros {
@@ -809,7 +808,7 @@ TE PUEDE SERVIR PARA EL RESPONSIVE, GIAN
   border: 2px dashed var(--color-amarillo);
   padding: var(--spacing-sm);
   flex: 1;
-  min-width: 280px;
+  min-width: 220px;
   max-width: 350px;
   display: flex;
   flex-direction: column;
@@ -1674,5 +1673,39 @@ a {
     position: relative;
   }
 }
-
+@media(max-width: 376px){
+  .logo{
+    padding-left: 14%;
+  }
+}
+@media(max-width: 325px){
+  .logo{
+    padding-left: 1%;
+  }
+  .direcciones-cab{
+    font-size: 16px;
+  }
+  .nosotros-cont{
+    width: 80%;
+  }
+  .estadisticas-nosotros{
+    width: 75%;
+  }
+  .txt-datos{
+  
+    font-size: 14px;
+  }
+  .blog-card{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .blog-content *{
+    font-size: 0.7em;
+    
+  }
+  .blog-content{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
 

@@ -1344,6 +1344,9 @@ a {
   transition: border 0.3s ease;
 }
 
+.menu-hambur{
+  display: none;
+}
 @media (max-width: 900px) {
   .formulario-section {
     flex-direction: column;
@@ -1614,7 +1617,8 @@ a {
   .logo{
     width: 80%;
     height: auto  ;
-    padding-left: 10%;
+    padding-left: 20%;
+    padding-bottom: 1rem;
   }
   .logo-img{
     width: 25%;
@@ -1631,6 +1635,16 @@ a {
   }
   .menu{
     display: none;
+  }
+  .menu-hambur{
+    display: block;
+    margin-top: 2%;
+    width: 20%;;
+    height: 4rem;
+    font-size: 40px;
+    border: none;
+    cursor: pointer;
+    background: none;
   }
   #img-nino{
     display: none;
@@ -1656,8 +1670,8 @@ a {
   .cta-subtitle, .cta-title{
     text-align: center;
   }
-  .hero-image img{
-    display: none;
+  .hero-image-container{
+    position: relative;
   }
 }
 

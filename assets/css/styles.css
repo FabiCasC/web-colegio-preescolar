@@ -1287,6 +1287,7 @@ a {
   gap: var(--spacing-lg);
   padding: var(--spacing-xl) 0;
   align-items: center;
+  justify-content: center;
 }
 
 .formulario {
@@ -1299,6 +1300,8 @@ a {
   flex: 1 1 220px;
   min-width: 180px;
   max-width: 400px;
+  display: flex;
+  justify-content: center;
 }
 
 .formulario-img img {

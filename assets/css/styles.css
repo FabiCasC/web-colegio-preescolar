@@ -1820,7 +1820,9 @@ a {
 }
 @media (max-width: 768px){
   .btn-tour{
-    display: none;
+    padding-left: 0em;
+    padding-right: 0em;
+    width: 100%;
   }
   .contacto{
     padding-right: 0px;
@@ -1838,7 +1840,7 @@ a {
   .cabecera-pag{
     height: auto;
     width: auto;
-
+    flex-direction: column;
   }
   .direcciones-cab{
     margin-top: 0.5rem;

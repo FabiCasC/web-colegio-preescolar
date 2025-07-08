@@ -126,7 +126,9 @@ span.direccion {
 }
 
 .btn-tour {
-  padding: 1em 1.2em;
+  padding: 1em 0em;
+  padding-left: 1em;
+  padding-right: 1em;
   background-color: var(--color-celeste);
   text-align: center;
   cursor: pointer;

@@ -2018,7 +2018,6 @@ a {
    ========================= */
 @media (max-width: 900px) {
   .menu {
-    display: none;
     position: fixed;
     top: 0;
     right: 0;
@@ -2063,13 +2062,25 @@ a {
   }
   .menu-hambur {
     display: block;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    z-index: 1201;
     background: none;
     border: none;
     font-size: 2.5rem;
     color: var(--color-celeste);
     cursor: pointer;
-    z-index: 1100;
-    margin-left: auto;
+    transition: color 0.2s, top 0.2s, right 0.2s;
+  }
+  .menu-hambur:hover {
+    color: var(--color-celesteoscuro);
+  }
+  .menu.menu-activo ~ .menu-hambur {
+    position: fixed;
+    top: 16px;
+    right: 24px;
+    z-index: 2000;
   }
   .menu-overlay {
     display: none;
@@ -2101,6 +2112,36 @@ a {
   }
   .menu-overlay {
     display: none !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .main-nav .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .social-icons {
+    order: 2;
+    margin-right: 0.5rem;
+    display: flex;
+    align-items: center;
+  }
+  .menu-hambur {
+    position: static;
+    order: 3;
+    margin-left: 0.5rem;
+    top: auto;
+    right: auto;
+    z-index: 1201;
+    background: none;
+    border: none;
+    font-size: 2.5rem;
+    color: var(--color-celeste);
+    cursor: pointer;
+    transition: color 0.2s;
+    display: block;
   }
 }
 
